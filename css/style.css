@@ -118,7 +118,6 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  margin-top: 20;
   padding: 0;
 }
 .slider-indicators li {
@@ -530,7 +529,6 @@ cite {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  margin-top: 20;
   padding: 0;
 }
 .quote-slider-indicators li {
