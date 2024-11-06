@@ -235,6 +235,7 @@ header img {
 }
 
 .block-caption {
+  color: var(--gray-4a);
   font-family: Roboto Condensed;
   font-size: 48px;
   font-weight: 400;
@@ -272,8 +273,7 @@ hr {
   border-left: 1px solid var(--white-light-yellow);
   border-right: none;
   border-top: none;
-  padding-bottom: 18px;
-  padding: 10px;
+  padding: 10px 10px 18px 10px;
 }
 
 .service-option a {
@@ -567,7 +567,7 @@ hr {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 480px;
+  height: 530px;
   justify-content: center;
 }
 
@@ -709,8 +709,7 @@ footer {
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 19px;
-  margin-bottom: 20px;
-  margin: 0px;
+  margin: 0px 0px 20px 0px;
 }
 
 address,
