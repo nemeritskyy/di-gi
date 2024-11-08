@@ -2,11 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tenor+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
 :root {
   --blue-accent: #2b4074;
   --font-by-default: "Roboto Condensed", Cambria, Cochin, Georgia, Times,
@@ -259,15 +254,6 @@ hr {
   height: 8px;
   margin: 30px 0 0 0;
   width: 100px;
-}
-
-.white-hr {
-  background: white;
-}
-
-.grey-hr {
-  background: var(--gray-4a);
-  /* display: none; */
 }
 
 .wrapper {
@@ -762,12 +748,55 @@ address,
   text-decoration: none;
 }
 
+.hr-gr {
+  background: var(--gray-4a);
+}
+
+.hr-wh {
+  background: white;
+}
+
+.hr-110w {
+  width:110px !important;
+}
+
 @media only screen and (max-width: 320px) {
 
   #nav-buttons-right,
   #info-bar p,
   .blue-button {
     display: none;
+  }
+
+  hr { 
+    display: none;
+    margin: 20px auto 0px auto;
+  }
+
+  .hr-100w {
+    display: block;
+    width:100px !important;
+  }
+
+  .hr-60w {
+    display: block;
+    width:60px !important;
+  }
+
+  .hr-50w {
+    display: block;
+    width: 50px !important;
+  }
+
+  .hr-45w {
+    display: block;
+    width: 45px !important;
+  }
+
+  .hr-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   header {
@@ -790,15 +819,6 @@ address,
     font-size: 28px;
     margin: 35px 0 0 0;
     width: 320px;
-  }
-
-  .grey-hr {
-    display: block !important;
-    border: none !important;
-    height: 8px !important;
-    margin: 30px 0 0 0 !important;
-    width: 100px !important;
-    background: white !important;
   }
 
   .transparent ul:last-of-type {
@@ -876,21 +896,6 @@ address,
     line-height: 28px;
     margin: 25px 0 0 0;
     text-align: center;
-  }
-
-  hr {
-    width: 50px !important;
-    display: none;
-  }
-
-  .hr-hide,
-  .white-hr, #team-section hr {
-    display: block;
-    margin: 20px auto 0px auto;
-  }
-
-  .hr-hide {
-    width: 100px !important;
   }
 
   .wrapper {
