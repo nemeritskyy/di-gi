@@ -9,230 +9,264 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <img src="images/logo.svg" alt="Di Gi Agency">
-      <button class="menu-button material-symbols-outlined">menu</button>
+    <header class="header">
+      <img src="images/logo.svg" alt="Di Gi Agency" class="header__logo">
+      <button
+        class="button header__menu-button material-symbols-outlined">menu</button>
     </header>
-    <section id="info-bar">
-      <div id="nav-buttons-right">
+    <section class="top-slider">
+      <div class="top-slider__arrows-container">
         <button
-          class="nav-button previous-button material-symbols-outlined">arrow_back_ios_new</button>
+          class="top-slider__slider-button top-slider__slider-button--previous material-symbols-outlined">arrow_back_ios_new</button>
         <button
-          class="nav-button next-button material-symbols-outlined">arrow_forward_ios</button>
+          class="top-slider__slider-button top-slider__slider-button--next material-symbols-outlined">arrow_forward_ios</button>
       </div>
-      <div class="transparent">
-        <h1>мисли<br>ГЛОБАЛЬНО</h1>
-        <hr class="hide hr-60w hr-gr">
-        <p>Di Gі — це діджитал агенція повного циклу, спрямована на
+      <div class="top-slider__container">
+        <h1 class="top-slider__header">мисли<br>ГЛОБАЛЬНО</h1>
+        <hr class="divider divider--hidden divider--width-60 divider--gray">
+        <p class="top-slider__description">Di Gі — це діджитал агенція повного
+          циклу, спрямована на
           найкращий<br>результат наших клієнтів в маркетингу, продажах та
           управленні</p>
-        <button class="blue-button">детальніше</button>
-        <ul class="slider-indicators">
-          <li></li>
-          <li class="indicator-active"></li>
-          <li></li>
+        <button class="button top-slider__button-details">детальніше</button>
+        <ul class="top-slider__indicators">
+          <li class="top-slider__indicator"></li>
+          <li class="top-slider__indicator top-slider__indicator--active"></li>
+          <li class="top-slider__indicator"></li>
         </ul>
       </div>
     </section>
-    <section id="callback-section">
-      <div class="slogan">
-        <strong>Ви полюбите нас з першої зустрічі!</strong>
-        <p>Ми надаємо комплексний підхід до просування компанії,<br>продуктів та
+    <section class="callback-section">
+      <div class="callback-section__slogan">
+        <strong class="slogan__header">Ви полюбите нас з першої
+          зустрічі!</strong>
+        <p class="slogan__description">Ми надаємо комплексний підхід до
+          просування компанії,<br>продуктів та
           послуг в цифровій сфері.</p>
       </div>
-      <button class="callback-button">передзвоніть мені</button>
+      <button class="button callback-section__button">передзвоніть мені</button>
     </section>
-    <section id="service-section">
-      <div class="service-block">
-        <h3 class="block-caption text-accent">Сервіс</h3>
-        <hr class="hide hr-center hr-100w">
-        <p>Від ідеї до незабутнього та вимірюваного результату.</p>
-        <hr>
-        <span>Інтеграція бездоганного виробництва, передових технологій та
+    <section class="service-section">
+      <div class="service-section__information">
+        <h3 class="service-section__header">Сервіс</h3>
+        <hr class="divider divider--hidden divider--width-100">
+        <p class="service-section__slogan">Від ідеї до незабутнього та
+          вимірюваного результату.</p>
+        <hr class="divider divider--mobile-hidden divider--width-100">
+        <span class="service-section__description">Інтеграція бездоганного
+          виробництва, передових технологій та
           ретельного вимірювання продуктивності</span>
       </div>
-      <div class="wrapper">
-        <div class="service-option">
+      <div class="service-section__wrapper">
+
+        <div class="service-section__option">
           <a href="#">
-            <div class="service-option-container">
-              <img src="images/services/strategy.png" alt="СТРАТЕГІЯ">
+            <div class="service-section__option-container">
+              <img src="images/services/strategy.png" alt="СТРАТЕГІЯ"
+                class="service-section__option-image">
               <strong
-                class="service-option-accent-text font-accent">СТРАТЕГІЯ</strong>
-              <span class="hint hide">Персоналізована стратегія базується на
+                class="service-section__option-header">СТРАТЕГІЯ</strong>
+              <span class="service-section__option-hint">Персоналізована
+                стратегія базується на
                 сучасних підходах</span>
               <span
-                class="service-option-accent-text font-dark-grey hide">ДЕТАЛЬНІШЕ
+                class="service-section__option-detail">ДЕТАЛЬНІШЕ
                 →</span>
             </div>
           </a>
         </div>
-        <div class="service-option">
+
+        <div class="service-section__option">
           <a href="#">
-            <div class="service-option-container">
-              <img src="images/services/analize.png" alt="АНАЛІЗ">
+            <div class="service-section__option-container">
+              <img src="images/services/analize.png" alt="АНАЛІЗ"
+                class="service-section__option-image">
               <strong
-                class="service-option-accent-text font-accent">АНАЛІЗ</strong>
-              <span class="hint hide">Персоналізований research звіт</span>
+                class="service-section__option-header">АНАЛІЗ</strong>
+              <span class="service-section__option-hint">Персоналізований
+                research звіт конкурентоспроможності</span>
               <span
-                class="service-option-accent-text font-dark-grey hide">ДЕТАЛЬНІШЕ
+                class="service-section__option-detail">ДЕТАЛЬНІШЕ
                 →</span>
             </div>
           </a>
         </div>
-        <div class="service-option">
+
+        <div class="service-section__option">
           <a href="#">
-            <div class="service-option-container">
+            <div class="service-section__option-container">
               <img src="images/services/social-networks.png" alt="Соц
-              мережі">
+              мережі" class="service-section__option-image">
               <strong
-                class="service-option-accent-text font-accent">Соц
+                class="service-section__option-header">Соц
                 мережі</strong>
-              <span class="hint hide">Підтримка активності бізнесу в соц
+              <span class="service-section__option-hint">Підтримка активності
+                бізнесу в соц
                 інженерії</span>
               <span
-                class="service-option-accent-text font-dark-grey hide">ДЕТАЛЬНІШЕ
+                class="service-section__option-detail">ДЕТАЛЬНІШЕ
                 →</span>
             </div>
           </a>
         </div>
-        <div class="service-option">
+
+        <div class="service-section__option">
           <a href="#">
-            <div class="service-option-container">
-              <img src="images/services/development.png" alt="Розвиток">
+            <div class="service-section__option-container">
+              <img src="images/services/development.png" alt="Розвиток"
+                class="service-section__option-image">
               <strong
-                class="service-option-accent-text font-accent">Розвиток</strong>
-              <span class="hint hide">Вдосконалення вже існуючих підходів</span>
+                class="service-section__option-header">Розвиток</strong>
+              <span class="service-section__option-hint">Вдосконалення вже
+                існуючих підходів</span>
               <span
-                class="service-option-accent-text font-dark-grey hide">ДЕТАЛЬНІШЕ
+                class="service-section__option-detail">ДЕТАЛЬНІШЕ
                 →</span>
             </div>
           </a>
         </div>
-        <div class="service-option">
+
+        <div class="service-section__option">
           <a href="#">
-            <div class="service-option-container">
-              <img src="images/services/content.png" alt="Контент">
+            <div class="service-section__option-container">
+              <img src="images/services/content.png" alt="Контент"
+                class="service-section__option-image">
               <strong
-                class="service-option-accent-text font-accent">Контент</strong>
-              <span class="hint hide">Унікальнрий контент адаптований під
+                class="service-section__option-header">Контент</strong>
+              <span class="service-section__option-hint">Унікальнрий контент
+                адаптований під
                 пошукові алгоритми</span>
               <span
-                class="service-option-accent-text font-dark-grey hide">ДЕТАЛЬНІШЕ
+                class="service-section__option-detail">ДЕТАЛЬНІШЕ
                 →</span>
             </div>
           </a>
         </div>
-        <div class="service-option">
+
+        <div class="service-section__option">
           <a href="#">
-            <div class="service-option-container">
-              <img src="images/services/design.png" alt="Дизайн UX">
+            <div class="service-section__option-container">
+              <img src="images/services/design.png" alt="Дизайн UX"
+                class="service-section__option-image">
               <strong
-                class="service-option-accent-text font-accent">Дизайн
-                UX</strong>
-              <span class="hint hide">Створимо унікальний та зручний
+                class="service-section__option-header">Дизайн UX</strong>
+              <span class="service-section__option-hint">Створимо унікальний та
+                зручний
                 дизайн</span>
               <span
-                class="service-option-accent-text font-dark-grey hide">ДЕТАЛЬНІШЕ
+                class="service-section__option-detail">ДЕТАЛЬНІШЕ
                 →</span>
             </div>
           </a>
         </div>
-        <div class="service-option">
+
+        <div class="service-section__option">
           <a href="#">
-            <div class="service-option-container">
-              <img src="images/services/adv.png" alt="ТАРГЕТОВАНА РЕКЛАМА">
+            <div class="service-section__option-container">
+              <img src="images/services/adv.png" alt="ТАРГЕТОВАНА РЕКЛАМА"
+                class="service-section__option-image">
               <strong
-                class="service-option-accent-text font-accent">ТАРГЕТОВАНА
+                class="service-section__option-header">ТАРГЕТОВАНА
                 РЕКЛАМА</strong>
-              <span class="hint hide">Персоналізована реклама націлена на
+              <span class="service-section__option-hint">Персоналізована реклама
+                націлена на
                 цільову аудиторію</span>
               <span
-                class="service-option-accent-text font-dark-grey hide">ДЕТАЛЬНІШЕ
+                class="service-section__option-detail">ДЕТАЛЬНІШЕ
                 →</span>
             </div>
           </a>
         </div>
-        <div class="service-option">
+
+        <div class="service-section__option">
           <a href="#">
-            <div class="service-option-container">
-              <img src="images/services/product.png" alt="ПРОДУКТ">
+            <div class="service-section__option-container">
+              <img src="images/services/product.png" alt="ПРОДУКТ"
+                class="service-section__option-image">
               <strong
-                class="service-option-accent-text font-accent">ПРОДУКТ</strong>
-              <span class="hint hide">Ви отримаєте готовій під ключ продукт з
+                class="service-section__option-header">ПРОДУКТ</strong>
+              <span class="service-section__option-hint">Ви отримаєте готовій
+                під ключ продукт з
                 необхідною документацією</span>
               <span
-                class="service-option-accent-text font-dark-grey hide">ДЕТАЛЬНІШЕ
+                class="service-section__option-detail">ДЕТАЛЬНІШЕ
                 →</span>
             </div>
           </a>
         </div>
       </div>
     </section>
-    <section id="project-section">
-      <h3 class="block-caption white">Наші Проєкти</h3>
-      <hr class="hr-50w hr-wh">
-      <div id="projects">
-        <div class="project">
-          <div class="project-img-wrapper">
-            <img src="images/portfolio/lauqie.jpg" class="project-img"
+    <section class="project-section">
+      <h3 class="project-section__header">Наші Проєкти</h3>
+      <hr class="divider divider--width-50 divider--white divider--center">
+      <div class="project-section__list">
+
+        <div class="project-section__card">
+          <div class="project-section__image-wrapper">
+            <img src="images/portfolio/lauqie.jpg"
+              class="project-section__image"
               alt="Lalique бутик">
-            <div class="project-img-hover">
+            <div class="project-section__image-hover">
               <a href="#"
-                class="material-symbols-outlined icon-resize font-accent">info</a>
+                class="material-symbols-outlined project-section__icon">info</a>
               <a href="#"
-                class="material-symbols-outlined icon-resize font-accent">search</a>
+                class="material-symbols-outlined project-section__icon">search</a>
             </div>
           </div>
-          <h6>Lalique бутик</h6>
+          <h6 class="project-section__name">Lalique бутик</h6>
         </div>
-        <div class="project">
-          <div class="project-img-wrapper">
-            <img src="images/portfolio/building.jpg" class="project-img"
+
+        <div class="project-section__card">
+          <div class="project-section__image-wrapper">
+            <img src="images/portfolio/building.jpg"
+              class="project-section__image"
               alt="Будівництво домів">
-            <div class="project-img-hover">
+            <div class="project-section__image-hover">
               <a href="#"
-                class="material-symbols-outlined icon-resize font-accent">info</a>
+                class="material-symbols-outlined project-section__icon">info</a>
               <a href="#"
-                class="material-symbols-outlined icon-resize font-accent">search</a>
+                class="material-symbols-outlined project-section__icon">search</a>
             </div>
           </div>
-          <h6>Будівництво домів</h6>
+          <h6 class="project-section__name">Будівництво домів</h6>
         </div>
-        <div class="project">
-          <div class="project-img-wrapper">
-            <img src="images/portfolio/cafe.jpg" class="project-img"
+
+        <div class="project-section__card">
+          <div class="project-section__image-wrapper">
+            <img src="images/portfolio/cafe.jpg" class="project-section__image"
               alt="Кавʼярня">
-            <div class="project-img-hover">
+            <div class="project-section__image-hover">
               <a href="#"
-                class="material-symbols-outlined icon-resize font-accent">info</a>
+                class="material-symbols-outlined project-section__icon">info</a>
               <a href="#"
-                class="material-symbols-outlined icon-resize font-accent">search</a>
+                class="material-symbols-outlined project-section__icon">search</a>
             </div>
           </div>
-          <h6>Кавʼярня</h6>
+          <h6 class="project-section__name">Кавʼярня</h6>
         </div>
-        <div class="project">
-          <div class="project-img-wrapper">
-            <img src="images/portfolio/tours.jpg" class="project-img"
+
+        <div class="project-section__card">
+          <div class="project-section__image-wrapper">
+            <img src="images/portfolio/tours.jpg" class="project-section__image"
               alt="Унікальні тури">
-            <div class="project-img-hover">
+            <div class="project-section__image-hover">
               <a href="#"
-                class="material-symbols-outlined icon-resize font-accent">info</a>
+                class="material-symbols-outlined project-section__icon">info</a>
               <a href="#"
-                class="material-symbols-outlined icon-resize font-accent">search</a>
+                class="material-symbols-outlined project-section__icon">search</a>
             </div>
           </div>
-          <h6>Унікальні тури</h6>
+          <h6 class="project-section__name">Унікальні тури</h6>
         </div>
       </div>
     </section>
-    <section id="team-section">
-      <div class="team-img-container"><img src="images/team.jpg"
-          alt="Команда"></div>
-      <div class="team-description">
-        <h3 class="block-caption font-dark-grey">Команда</h3>
-        <hr class="hr-110w hr-45w">
-        <span>
+    <section class="team-section">
+      <div class="team-section__image-wrapper"><img src="images/team.jpg"
+          alt="Команда" class="team-section__image"></div>
+      <div class="team-section__information">
+        <h3 class="team-section__header">Команда</h3>
+        <hr class="divider divider--width-110 divider--width-45">
+        <span class="team-section__text">
           Наша команда — це наша найбільша цінність.<br>
           Ми наполегливо працювали, щоб створити групу експертів,
           чиї навички доповнюють один одного.<br>
@@ -242,144 +276,172 @@
           потрібно розвиватись, тому ми постійно шукаємо<br>
           способи, як стати краще в тому, що ми робимо.
         </span>
-        <button class="watch-button">ДИВИТИСЬ ВІДЕО</button>
+        <button class="team-section__button">ДИВИТИСЬ ВІДЕО</button>
       </div>
     </section>
-    <section id="news-section">
-      <h3 class="block-caption">Останні Новини</h3>
-      <hr class="hr-50w">
-      <div class="news-container">
+    <section class="news-section">
+      <h3 class="news-section__header">Останні Новини</h3>
+      <hr class="divider divider--width-50 divider--center">
+      <div class="news-section__list">
+
         <a href="#">
-          <div class="news-item">
-            <img src="images/news/news-1.png" alt="3Д в брендингу">
-            <span class="news-item-span">3Д в брендингу</span>
-            <div class="news-item-hover">
-              <p class="material-symbols-outlined icon-resize white">info</p>
+          <div class="news-section__card">
+            <img src="images/news/news-1.png" alt="3Д в брендингу"
+              class="news-section__card-image">
+            <span class="news-section__card-title">3Д в брендингу</span>
+            <div class="news-section__hover">
+              <p
+                class="material-symbols-outlined  news-section__info-icon">info</p>
             </div>
           </div>
         </a>
+
         <a href="#">
-          <div class="news-item">
-            <img src="images/news/news-2.png" alt="Унікальний дизайн">
-            <span class="news-item-span">Унікальний дизайн</span>
-            <div class="news-item-hover">
-              <p class="material-symbols-outlined icon-resize white">info</p>
+          <div class="news-section__card">
+            <img src="images/news/news-2.png" alt="Унікальний дизайн"
+              class="news-section__card-image">
+            <span class="news-section__card-title">Унікальний дизайн</span>
+            <div class="news-section__hover">
+              <p
+                class="material-symbols-outlined  news-section__info-icon">info</p>
             </div>
           </div>
         </a>
+
         <a href="#">
-          <div class="news-item">
-            <img src="images/news/news-3.png" alt="Погляд зі сторони">
-            <span class="news-item-span">Погляд зі сторони</span>
-            <div class="news-item-hover">
-              <p class="material-symbols-outlined icon-resize white">info</p>
+          <div class="news-section__card">
+            <img src="images/news/news-3.png" alt="Контекстна реклама"
+              class="news-section__card-image">
+            <span class="news-section__card-title">Контекстна реклама</span>
+            <div class="news-section__hover">
+              <p
+                class="material-symbols-outlined  news-section__info-icon">info</p>
             </div>
           </div>
         </a>
+
         <a href="#">
-          <div class="news-item">
-            <img src="images/news/news-4.png" alt="Графіка">
-            <span class="news-item-span">Графіка</span>
-            <div class="news-item-hover">
-              <p class="material-symbols-outlined icon-resize white">info</p>
+          <div class="news-section__card">
+            <img src="images/news/news-4.png" alt="Погляд зі сторони"
+              class="news-section__card-image">
+            <span class="news-section__card-title">Погляд зі сторони</span>
+            <div class="news-section__hover">
+              <p
+                class="material-symbols-outlined  news-section__info-icon">info</p>
             </div>
           </div>
         </a>
+
         <a href="#">
-          <div class="news-item">
-            <img src="images/news/news-5.png" alt="Графіка">
-            <span class="news-item-span">Графіка</span>
-            <div class="news-item-hover">
-              <p class="material-symbols-outlined icon-resize white">info</p>
+          <div class="news-section__card">
+            <img src="images/news/news-5.png" alt="Графіка"
+              class="news-section__card-image">
+            <span class="news-section__card-title">Графіка</span>
+            <div class="news-section__hover">
+              <p
+                class="material-symbols-outlined  news-section__info-icon">info</p>
             </div>
           </div>
         </a>
+
         <a href="#">
-          <div class="news-item">
-            <img src="images/news/news-6.png" alt="Соц мережі та їх користь">
-            <span class="news-item-span">Соц мережі та їх користь</span>
-            <div class="news-item-hover">
-              <p class="material-symbols-outlined icon-resize white">info</p>
+          <div class="news-section__card">
+            <img src="images/news/news-6.png" alt="Соц мережі та їх користь"
+              class="news-section__card-image">
+            <span class="news-section__card-title">Соц мережі та їх
+              користь</span>
+            <div class="news-section__hover">
+              <p
+                class="material-symbols-outlined  news-section__info-icon">info</p>
             </div>
           </div>
         </a>
+
         <a href="#">
-          <div class="news-item">
-            <img src="images/news/news-7.png" alt="Корпоративна культура">
-            <span class="news-item-span">Корпоративна культура</span>
-            <div class="news-item-hover">
-              <p class="material-symbols-outlined icon-resize white">info</p>
+          <div class="news-section__card">
+            <img src="images/news/news-7.png" alt="Корпоративна культура"
+              class="news-section__card-image">
+            <span class="news-section__card-title">Корпоративна культура</span>
+            <div class="news-section__hover">
+              <p
+                class="material-symbols-outlined  news-section__info-icon">info</p>
             </div>
           </div>
         </a>
+
         <a href="#">
-          <div class="news-item">
-            <img src="images/news/news-8.png" alt="Ексклюзивність">
-            <span class="news-item-span">Ексклюзивність</span>
-            <div class="news-item-hover">
-              <p class="material-symbols-outlined icon-resize white">info</p>
+          <div class="news-section__card">
+            <img src="images/news/news-8.png" alt="Ексклюзивність"
+              class="news-section__card-image">
+            <span class="news-section__card-title">Ексклюзивність</span>
+            <div class="news-section__hover">
+              <p
+                class="material-symbols-outlined  news-section__info-icon">info</p>
             </div>
           </div>
         </a>
       </div>
     </section>
-    <section id="quote-section">
+    <section class="quote-section">
       <span
-        class="fa-solid fa-quote-right quote-resize font-accent"></span>
-      <blockquote>Якщо треба створити або підняти імідж компанії,<br>
-        то <strong>діджитал-маркетинг</strong> є найбільш влучним</blockquote>
-      <cite>- Маргарита Акулич</cite>
-      <ul class="quote-slider-indicators">
-        <li></li>
-        <li class="quote-indicator-active"></li>
-        <li></li>
+        class="quote-section__icon fa-solid fa-quote-right "></span>
+      <blockquote class="quote-section__text">Якщо треба створити або підняти
+        імідж компанії,<br>
+        то <strong
+          class="quote-section__text-accent">діджитал-маркетинг</strong> є
+        найбільш влучним</blockquote>
+      <cite class="quote-section__author">- Маргарита Акулич</cite>
+      <ul class="quote-section__indicators">
+        <li class="quote-section__indicator"></li>
+        <li
+          class="quote-section__indicator quote-section__indicator--active"></li>
+        <li class="quote-section__indicator"></li>
       </ul>
     </section>
-    <footer>
-      <div class="bottom-logo"><img src="images/logo.svg"
-          alt="Di Gi Agency"></div>
-      <div class="bottom-container">
-        <div class="bottom-description white">
+    <footer class="footer">
+      <div class="footer__logo"><img src="images/logo.svg"
+          alt="Di Gi Agency" class="footer__logo-image"></div>
+      <div class="footer__content">
+        <div class="footer__text">
           Ми хотіли б почути все про ваш проєкт.<br>
           Звʼяжіться з нами!</div>
-        <div class="social-networks">
-          <div class="column"><a href="#"
-              class="fab fa-facebook white"></a></div>
-          <div class="column"><a href="#" class="fab fa-google white"></a></div>
-          <div class="column"><a href="#"
-              class="fab fa-twitter white"></a></div>
-          <div class="column rm-rg-br"><a href="#"
-              class="fab fa-pinterest white"></a></div>
+        <div class="footer__social-networks">
+              <a href="#" class="footer__social-network-link" target="_blank"><div class="footer__social-network"><span class="fab fa-facebook"></span></div></a>
+              <a href="#" class="footer__social-network-link" target="_blank"><div class="footer__social-network"><span class="fab fa-google"></span></div></a>
+              <a href="#" class="footer__social-network-link" target="_blank"><div class="footer__social-network"><span class="fab fa-twitter"></span></div></a>
+              <a href="#" class="footer__social-network-link" target="_blank"><div class="footer__social-network"><span class="fab fa-pinterest"></span></div></a>
         </div>
-        <div class="nav-bottom">
-          <div class="nav-column">
-            <h5>КОНТАКТИ</h5>
-            <a href="tel:+3805555566">+380 555 55 66</a>
-            <a href="mailto:digi@gmail.com">digi@gmail.com</a>
+        <div class="footer__links">
+          <div class="footer__links-column">
+            <h5 class="footer__heading">КОНТАКТИ</h5>
+            <a href="tel:+3805555566" class="footer__link">+380 555 55 66</a>
+            <a href="mailto:digi@gmail.com"
+              class="footer__link">digi@gmail.com</a>
           </div>
-          <div class="nav-column"><h5>АДРЕСА</h5>
-            <address>
+
+          <div class="footer__links-column"><h5 class="footer__heading">АДРЕСА</h5>
+            <address class="footer__address">
               Пр. Науки 107<br>
               Kиїв / Україна
             </address>
           </div>
-          <div class="nav-column"><h5>ДОПОМОГА</h5>
-            <a href="#">Як з нами звʼязатись?</a>
-            <a href="#">Що таке діджитал?</a>
-            <a href="#">Вартість послуг</a>
+          <div class="footer__links-column"><h5 class="footer__heading">ДОПОМОГА</h5>
+            <a href="#" class="footer__link">Як з нами звʼязатись?</a>
+            <a href="#" class="footer__link">Що таке діджитал?</a>
+            <a href="#" class="footer__link">Вартість послуг</a>
           </div>
-          <div class="nav-column"><h5>МЕНЮ</h5>
-            <a href="#">Наші проєкти</a>
-            <a href="#">Команда</a>
-            <a href="#">Блог</a>
+          <div class="footer__links-column"><h5 class="footer__heading">МЕНЮ</h5>
+            <a href="#" class="footer__link">Наші проєкти</a>
+            <a href="#" class="footer__link">Команда</a>
+            <a href="#" class="footer__link">Блог</a>
           </div>
         </div>
       </div>
     </footer>
-    <div id="top-link">
-      <div class="top-link-container">
-        <a href="#">НАГОРУ</a>
-        <i class="fa-solid fa-chevron-up font-accent"></i>
+    <div class="top-link">
+      <div class="top-link__container">
+        <a href="#" class="top-link__text">НАГОРУ</a>
+        <i class="fa-solid fa-chevron-up top-link__icon"></i>
       </div>
     </div>
     <script
