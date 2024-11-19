@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Di Gi Agency</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <meta property="og:title" content="Digital Agency with modern approaches">
+    <meta property="og:description"
+      content="We are a Digital Agency that uses modern approaches to deliver outstanding results.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nemeritskyy.github.io/di-gi/">
+    <meta property="og:image"
+      content="https://nemeritskyy.github.io/di-gi/images/team.jpg">
   </head>
   <body>
     <header class="header">
@@ -15,23 +24,44 @@
         class="button header__menu-button material-symbols-outlined">menu</button>
     </header>
     <section class="top-slider">
-      <div class="top-slider__arrows-container">
+      <div class="top-slider__arrows-container owl-nav">
         <button
-          class="top-slider__slider-button top-slider__slider-button--previous material-symbols-outlined">arrow_back_ios_new</button>
+          class="top-slider__slider-button top-slider__slider-button--previous material-symbols-outlined owl-prev">arrow_back_ios_new</button>
         <button
-          class="top-slider__slider-button top-slider__slider-button--next material-symbols-outlined">arrow_forward_ios</button>
+          class="top-slider__slider-button top-slider__slider-button--next material-symbols-outlined owl-next">arrow_forward_ios</button>
       </div>
       <div class="top-slider__container">
         <h1 class="top-slider__header">мисли<br>ГЛОБАЛЬНО</h1>
         <hr class="divider divider--hidden divider--width-60 divider--gray">
-        <p class="top-slider__description">Di Gі — це діджитал агенція повного
-          циклу, спрямована на
-          найкращий<br>результат наших клієнтів в маркетингу, продажах та
-          управленні</p>
+        <div class="owl-carousel">
+          <div class="top-slider__owl-wrapper">
+            <div class="top-slider__description">Di Gі — це діджитал агенція
+              повного циклу, що створює ефективні рішення для
+              бізнесу.</div></div>
+          <div class="top-slider__owl-wrapper">
+            <div class="top-slider__owl-wrapper top-slider__description">Ми
+              допомагаємо досягати
+              максимальних результатів у маркетингу та продажах.</div></div>
+          <div class="top-slider__owl-wrapper">
+            <div class="top-slider__owl-wrapper top-slider__description">Ваш
+              успіх
+              — наша мета. Довірте
+              свої бізнес-процеси професіоналам Di Gі.</div></div>
+          <div class="top-slider__owl-wrapper">
+            <div class="top-slider__owl-wrapper top-slider__description">Сучасні
+              підходи, креативні ідеї
+              та перевірені стратегії — ось що пропонує Di Gі.</div></div>
+          <div class="top-slider__owl-wrapper">
+            <div class="top-slider__owl-wrapper top-slider__description">Di Gі —
+              ваш надійний партнер у
+              світі цифрових рішень.</div></div>
+        </div>
         <button class="button top-slider__button-details">детальніше</button>
         <ul class="top-slider__indicators">
           <li class="top-slider__indicator"></li>
-          <li class="top-slider__indicator top-slider__indicator--active"></li>
+          <li class="top-slider__indicator"></li>
+          <li class="top-slider__indicator"></li>
+          <li class="top-slider__indicator"></li>
           <li class="top-slider__indicator"></li>
         </ul>
       </div>
@@ -387,18 +417,54 @@
     <section class="quote-section">
       <span
         class="quote-section__icon fa-solid fa-quote-right "></span>
-      <blockquote class="quote-section__text">Якщо треба створити або підняти
-        імідж компанії,<br>
-        то <strong
-          class="quote-section__text-accent">діджитал-маркетинг</strong> є
-        найбільш влучним</blockquote>
-      <cite class="quote-section__author">- Маргарита Акулич</cite>
+      <div class="quote-section__carousel owl-carousel">
+        <div class="quote-section__item">
+          <blockquote class="quote-section__text">
+            Якщо треба створити або підняти імідж компанії,<br>
+            то <strong
+              class="quote-section__text-accent">діджитал-маркетинг</strong> є
+            найбільш влучним
+          </blockquote>
+          <cite class="quote-section__author">- Маргарита Акулич</cite>
+        </div>
+        <div class="quote-section__item">
+          <blockquote class="quote-section__text">
+            «Стратегічний підхід до маркетингу забезпечує <strong
+              class="quote-section__text-accent">успіх</strong> на будь-якому
+            ринку»
+          </blockquote>
+          <cite class="quote-section__author">- Олександр Ткаченко</cite>
+        </div>
+        <div class="quote-section__item">
+          <blockquote class="quote-section__text">
+            «Інновації в маркетингу визначають майбутнє бізнесу»
+          </blockquote>
+          <cite class="quote-section__author">- Світлана Мельник</cite>
+        </div>
+        <div class="quote-section__item">
+          <blockquote class="quote-section__text">
+            «Креативність у комунікаціях — це ключ до успіху»
+          </blockquote>
+          <cite class="quote-section__author">- Дмитро Козак</cite>
+        </div>
+        <div class="quote-section__item">
+          <blockquote class="quote-section__text">
+            «Ми живемо в епоху цифрових технологій, і без них неможливо досягти
+            результату»
+          </blockquote>
+          <cite class="quote-section__author">- Ірина Павленко</cite>
+        </div>
+      </div>
+
       <ul class="quote-section__indicators">
-        <li class="quote-section__indicator"></li>
         <li
           class="quote-section__indicator quote-section__indicator--active"></li>
         <li class="quote-section__indicator"></li>
+        <li class="quote-section__indicator"></li>
+        <li class="quote-section__indicator"></li>
+        <li class="quote-section__indicator"></li>
       </ul>
+
     </section>
     <footer class="footer">
       <div class="footer__logo"><img src="images/logo.svg"
@@ -459,6 +525,7 @@
     </div>
     <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
