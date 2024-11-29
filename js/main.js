@@ -1,34 +1,67 @@
 $(document).ready(function () {
-  var owl = $(".owl-carousel");
-  owl.owlCarousel({
+  var one = $("#one");
+  var two = $("#two");
+
+  one.owlCarousel({
+    items: 1,
+    loop: true,
+  });
+
+  two.owlCarousel({
     items: 1,
     loop: true,
   });
 
   $(".owl-prev").click(function () {
-    owl.trigger("prev.owl.carousel");
+    one.trigger("prev.owl.carousel");
   });
 
   $(".owl-next").click(function () {
-    owl.trigger("next.owl.carousel");
+    one.trigger("next.owl.carousel");
   });
 
-  updateIndicators(0);
+  // Update indicators for the first carousel
+  updateIndicators(one, 0);
 
-  owl.on("changed.owl.carousel", function (event) {
+  one.on("changed.owl.carousel", function (event) {
     var realIndex = event.page.index;
-    updateIndicators(realIndex);
+    updateIndicators(one, realIndex);
   });
 
-  function updateIndicators(currentIndex) {
-    $(".top-slider__indicator").removeClass("top-slider__indicator--active");
-    $(".top-slider__indicator")
-      .eq(currentIndex)
-      .addClass("top-slider__indicator--active");
+  // Update indicators for the second carousel
+  updateIndicators(two, 0);
+
+  two.on("changed.owl.carousel", function (event) {
+    var realIndex = event.page.index;
+    updateIndicators(two, realIndex);
+  });
+
+  // Update indicators
+  function updateIndicators(carousel, currentIndex) {
+    if (carousel.attr("id") === "one") {
+      $(".top-slider__indicator").removeClass("top-slider__indicator--active");
+      $(".top-slider__indicator")
+        .eq(currentIndex)
+        .addClass("top-slider__indicator--active");
+    } else {
+      $(".quote-section__indicator").removeClass(
+        "quote-section__indicator--active"
+      );
+      $(".quote-section__indicator")
+        .eq(currentIndex)
+        .addClass("quote-section__indicator--active");
+    }
   }
 
+  // Click on indicator first carousel
   $(".top-slider__indicator").click(function () {
     var index = $(this).index();
-    owl.trigger("to.owl.carousel", [index, 300]);
+    one.trigger("to.owl.carousel", [index, 300]);
+  });
+
+  // Click on indicator second carousel
+  $(".quote-section__indicator").click(function () {
+    var index = $(this).index();
+    two.trigger("to.owl.carousel", [index, 300]);
   });
 });

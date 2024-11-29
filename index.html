@@ -24,47 +24,52 @@
         class="button header__menu-button material-symbols-outlined">menu</button>
     </header>
     <section class="top-slider">
+      <div class="owl-carousel" id="one">
+        <div class="top-slider first-slide">
+          <div class="top-slider__container">
+            <h1 class="top-slider__header">мисли<br>ГЛОБАЛЬНО</h1>
+            <hr class="divider divider--hidden divider--width-60 divider--gray">
+            <div class="top-slider__owl-wrapper">
+              <div class="top-slider__description">Di Gі — це діджитал агенція
+                повного циклу, що створює ефективні рішення для
+                бізнесу.</div></div>
+            <button
+              class="button top-slider__button-details">детальніше</button>
+          </div>
+        </div>
+        <div class="top-slider second-slide">
+          <div class="top-slider__container"><h1 class="top-slider__header">твори<br>ІННОВАЦІЙНО</h1>
+            <hr class="divider divider--hidden divider--width-60 divider--gray">
+            <div class="top-slider__owl-wrapper">
+              <div class="top-slider__description">Di Gі — це команда, що поєднує креатив та технології, щоб вивести ваш бізнес на новий рівень.</div>
+            </div>            
+            <button
+              class="button top-slider__button-details">детальніше</button>
+          </div>
+        </div>
+        <div class="top-slider third-slide">
+          <div class="top-slider__container"><h1 class="top-slider__header">створюй<br>МАЙБУТНЄ</h1>
+            <hr class="divider divider--hidden divider--width-60 divider--gray">
+            <div class="top-slider__owl-wrapper">
+              <div class="top-slider__description">Di Gі — це діджитал агенція, яка допомагає бізнесу підготуватися до викликів майбутнього.</div>
+            </div>            
+            <button
+              class="button top-slider__button-details">детальніше</button>
+          </div>
+        </div>
+      </div>
+
       <div class="top-slider__arrows-container owl-nav">
         <button
           class="top-slider__slider-button top-slider__slider-button--previous material-symbols-outlined owl-prev">arrow_back_ios_new</button>
         <button
           class="top-slider__slider-button top-slider__slider-button--next material-symbols-outlined owl-next">arrow_forward_ios</button>
       </div>
-      <div class="top-slider__container">
-        <h1 class="top-slider__header">мисли<br>ГЛОБАЛЬНО</h1>
-        <hr class="divider divider--hidden divider--width-60 divider--gray">
-        <div class="owl-carousel">
-          <div class="top-slider__owl-wrapper">
-            <div class="top-slider__description">Di Gі — це діджитал агенція
-              повного циклу, що створює ефективні рішення для
-              бізнесу.</div></div>
-          <div class="top-slider__owl-wrapper">
-            <div class="top-slider__owl-wrapper top-slider__description">Ми
-              допомагаємо досягати
-              максимальних результатів у маркетингу та продажах.</div></div>
-          <div class="top-slider__owl-wrapper">
-            <div class="top-slider__owl-wrapper top-slider__description">Ваш
-              успіх
-              — наша мета. Довірте
-              свої бізнес-процеси професіоналам Di Gі.</div></div>
-          <div class="top-slider__owl-wrapper">
-            <div class="top-slider__owl-wrapper top-slider__description">Сучасні
-              підходи, креативні ідеї
-              та перевірені стратегії — ось що пропонує Di Gі.</div></div>
-          <div class="top-slider__owl-wrapper">
-            <div class="top-slider__owl-wrapper top-slider__description">Di Gі —
-              ваш надійний партнер у
-              світі цифрових рішень.</div></div>
-        </div>
-        <button class="button top-slider__button-details">детальніше</button>
-        <ul class="top-slider__indicators">
-          <li class="top-slider__indicator"></li>
-          <li class="top-slider__indicator"></li>
-          <li class="top-slider__indicator"></li>
-          <li class="top-slider__indicator"></li>
-          <li class="top-slider__indicator"></li>
-        </ul>
-      </div>
+      <ul class="top-slider__indicators">
+        <li class="top-slider__indicator"></li>
+        <li class="top-slider__indicator"></li>
+        <li class="top-slider__indicator"></li>
+      </ul>
     </section>
     <section class="callback-section">
       <div class="callback-section__slogan">
@@ -148,8 +153,8 @@
                 class="service-section__option-image">
               <strong
                 class="service-section__option-header">Розвиток</strong>
-              <span class="service-section__option-hint">Вдосконалення вже
-                існуючих підходів</span>
+              <span class="service-section__option-hint">Вдосконалення
+                підходів</span>
               <span
                 class="service-section__option-detail">ДЕТАЛЬНІШЕ
                 →</span>
@@ -417,7 +422,7 @@
     <section class="quote-section">
       <span
         class="quote-section__icon fa-solid fa-quote-right "></span>
-      <div class="quote-section__carousel owl-carousel">
+      <div class="quote-section__carousel owl-carousel" id="two">
         <div class="quote-section__item">
           <blockquote class="quote-section__text">
             Якщо треба створити або підняти імідж компанії,<br>
@@ -455,16 +460,13 @@
           <cite class="quote-section__author">- Ірина Павленко</cite>
         </div>
       </div>
-
       <ul class="quote-section__indicators">
-        <li
-          class="quote-section__indicator quote-section__indicator--active"></li>
+        <li class="quote-section__indicator"></li>
         <li class="quote-section__indicator"></li>
         <li class="quote-section__indicator"></li>
         <li class="quote-section__indicator"></li>
         <li class="quote-section__indicator"></li>
       </ul>
-
     </section>
     <footer class="footer">
       <div class="footer__logo"><img src="images/logo.svg"
@@ -494,7 +496,6 @@
             <a href="mailto:digi@gmail.com"
               class="footer__link">digi@gmail.com</a>
           </div>
-
           <div class="footer__links-column"><h5
               class="footer__heading">АДРЕСА</h5>
             <address class="footer__address">
